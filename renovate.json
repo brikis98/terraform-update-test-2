@@ -24,6 +24,6 @@
     "Release Notes": "[Release Notes](https://github.com/{{depName}}/releases/tag/{{newVersion}})",
     "Update": "{{#if isPatch}}Minor{{else}}Major **[BACKWARDS INCOMPATIBLE, SEE RELEASE NOTES]**{{/if}}"
   },
-  "prBodyNotes": ["{{#unless isPatch}}:warning: This is a **backwards incompatible upgrade**. You MUST read the [Release Notes](https://github.com/{{depName}}/releases/tag/{{newVersion}}) for upgrade instructions! :warning:{{/if}}"]
+  "prBodyNotes": ["{{#unless isPatch}}:warning: This is a **backwards incompatible upgrade**. You MUST read the [Release Notes](https://github.com/{{depName}}/releases/tag/{{newVersion}}) for upgrade instructions! :warning:{{/if}}"],
   "prHourlyLimit": 10
 }
