@@ -21,7 +21,7 @@
     "Release Notes"
   ],
   "prBodyDefinitions": {
-    "Release Notes": "https://github.com/gruntwork-io/{{depName}}/releases/tag/{{newVersion}}",
+    "Release Notes": "https://github.com/{{depName}}/releases/tag/{{newVersion}}",
     "Update": "{{#if isPatch}}Minor{{else}}Major **[BACKWARDS INCOMPATIBLE, SEE RELEASE NOTES]**{{/if}}"
   },
   "prHourlyLimit": 10
