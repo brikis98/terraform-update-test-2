@@ -17,7 +17,9 @@
     "Update",
     "Type",
     "New value",
-    "Package file",
-    "References"
-  ]  
+    "Release Notes"
+  ],
+  "prBodyDefinitions": {
+    "Release Notes": "https://github.com/gruntwork-io/{{name}}/releases/tag/{{newVersion}}"
+  }
 }
