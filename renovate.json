@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "config:base"
+  ],
+  "registryUrls": ["https://eh3qxbpvoc.execute-api.us-east-1.amazonaws.com/default"],
+  "enabledManagers": ["regex"],
+  "regexManagers": [
+    {
+      "fileMatch": ["\\.tf$", "^terragrunt.hcl$"],
+      "matchStrings": ["source\\s*=\\s*\"github.com.+(?<depName>gruntwork-io/.*?)/.+ref=(?<currentValue>.*?)\""],
+      "datasourceTemplate": "terraform-module"
+    }
+  ]  
+}
