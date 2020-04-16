@@ -11,5 +11,13 @@
       "depNameTemplate": "gruntwork-io/{{name}}/{{#if cloud}}{{cloud}}{{else}}aws{{/if}}",
       "datasourceTemplate": "terraform-module"
     }
+  ],
+  "prBodyColumns": [
+    "Package",
+    "Update",
+    "Type",
+    "New value",
+    "Package file",
+    "References"
   ]  
 }
