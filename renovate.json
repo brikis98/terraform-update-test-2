@@ -8,7 +8,8 @@
     {
       "fileMatch": ["\\.tf$", "^terragrunt.hcl$"],
       "matchStrings": ["source\\s*=\\s*\"github\\.com.gruntwork-io/(?:(?<prefix>terraform)-(?<cloud>.+?)-)?(?<name>.+?)(?:/.*?)?\\?ref=(?<currentValue>.*?)\""],
-      "depNameTemplate": "gruntwork-io/{{name}}/{{#if cloud}}{{cloud}}{{else}}aws{{/if}}",
+      "depNameTemplate": "gruntwork-io/{{#if cloud}}terraform-{{cloud}}-{{/if}}{{name}}",
+      "lookupNameTemplate": "gruntwork-io/{{name}}/{{#if cloud}}{{cloud}}{{else}}aws{{/if}}", 
       "datasourceTemplate": "terraform-module"
     }
   ],
@@ -20,6 +21,6 @@
     "Release Notes"
   ],
   "prBodyDefinitions": {
-    "Release Notes": "https://github.com/gruntwork-io/{{name}}/releases/tag/{{newVersion}}"
+    "Release Notes": "https://github.com/gruntwork-io/{{depName}}/releases/tag/{{newVersion}}"
   }
 }
