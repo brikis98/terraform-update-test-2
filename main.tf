@@ -1,5 +1,5 @@
 module "couchbase" {
-  source = "github.com/gruntwork-io/terraform-aws-couchbase//modules/couchbase-cluster?ref=v0.0.1"
+  source = "github.com/gruntwork-io/terraform-aws-couchbase//modules/couchbase-cluster?ref=v0.2.4"
 }
 
 module "vpc" {
