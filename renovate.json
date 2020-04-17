@@ -3,7 +3,7 @@
     "config:base"
   ],
   "registryUrls": ["https://eh3qxbpvoc.execute-api.us-east-1.amazonaws.com/default"],
-  "enabledManagers": ["regex", "docker"],
+  "enabledManagers": ["regex"],
   "regexManagers": [
     {
       "fileMatch": ["\\.tf$", "^terragrunt.hcl$"],
