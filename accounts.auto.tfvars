@@ -1,5 +1,5 @@
 accounts = {
-  # TO ADD A NEW ACCOUNT: COPY/PASTE THE BLOCK BELOW AND FILL IN YOUR DETAILS
+  # TO ADD A NEW ACCOUNT: COPY/PASTE THE BLOCK BELOW, FILL IN YOUR DETAILS, AND OPEN A PR!
   # 
   # example = {
   #   root_email = "your.email@company.com"
