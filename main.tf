@@ -3,5 +3,5 @@ module "couchbase" {
 }
 
 module "vpc" {
-  source = "github.com/gruntwork-io/module-vpc//modules/vpc-app?ref=v0.8.6"
+  source = "github.com/gruntwork-io/module-vpc//modules/vpc-app?ref=v0.9.0"
 }
